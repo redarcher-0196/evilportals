@@ -20,7 +20,7 @@ Change directory to evilportals/portals/
 
 Copy the portals you wish to use on the Tetra at `/root/portals/` or on the Nano at `/sd/portals/`
 
-    scp -r portal-login root@172.16.42.1:/root/portals/
+    scp -r -O portal-login root@172.16.42.1:/root/portals/
 
 Alternatively you can use [Filezilla](https://filezilla-project.org/) to copy the portals
 
