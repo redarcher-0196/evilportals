@@ -54,11 +54,47 @@ html, body {
     width: 100%;
     font-weight: 400;
     height: 52px !important;
+    box-sizing: border-box;
+}
+
+.floating-input {
+    position: relative;
+}
+
+.floating-input + .floating-input {
+    margin-top: 20px;
+}
+
+.floating-input .g-input {
+    padding-top: 18px;
+    padding-bottom: 8px;
+}
+
+.floating-label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #5f6368;
+    pointer-events: none;
+    background: #fff;
+    padding: 0 4px;
+    transition: top 0.15s ease, transform 0.15s ease, font-size 0.15s ease, color 0.15s ease;
+}
+
+.floating-input .g-input:focus + .floating-label,
+.floating-input .g-input:not(:placeholder-shown) + .floating-label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #1a73e8;
 }
 
 .g-input:focus {
     outline: none !important;
-    border: 2px solid #1a73e8;
+    border: 1px solid #1a73e8;
+    box-shadow: 0 0 0 1px #1a73e8;
     transition-timing-function: ease;
 }
 
@@ -189,10 +225,6 @@ html, body {
 .invalid-email-text-span {
     font-size: 12px;
     color: red;
-}
-
-.password-input {
-    margin-top: 20px;
 }
 
 .g-input:required {
