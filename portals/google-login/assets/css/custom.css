@@ -21,7 +21,7 @@ html, body {
 .login-container {
     margin-top: 0px;
     border: 1px solid rgb(217, 220, 222);
-    border-radius: 8px;
+    border-radius: 25px;
 	height: 80%;
 	position: relative;
 }
@@ -229,4 +229,82 @@ html, body {
 
 .g-input:required {
 	box-shadow: none;
+}
+
+/* ── Language-selection footer ── */
+.g-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 18px 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #5f6368;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.g-footer-lang {
+    display: flex;
+    align-items: center;
+}
+
+.g-footer-lang-select {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.g-footer-lang-select:hover {
+}
+
+.g-footer-select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #5f6368;
+    cursor: pointer;
+    padding-right: 0;
+    outline: none;
+}
+
+.g-footer-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.g-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.g-footer-link {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.g-footer-link:hover {
+    text-decoration: underline;
+    color: #1a73e8;
+}
+
+@media (max-width: 480px) {
+    .g-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 16px;
+    }
 }
